@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo logo" href="#">
+        <img src="/assets/logo.png" alt="Логотип компании Танос" />
+      </a>
+      <nav class="header__menu menu">
+        <button class="menu__item">меню</button>
+        <a class="menu__item" href="">портфолио</a>
+        <a class="menu__item" href="">цены</a>
+        <a class="menu__item" href="">схема работы</a>
+        <a class="menu__item" href="">отзывы</a>
+        <a class="menu__item" href="">контакты</a>
+        <a class="menu__item" href="">Гарантия</a>
+      </nav>
+      <button class="header__btn">обратный звонок</button>
+    </header>
+
+    <main class="main">
+      <section class="main__info info">
+        <div class="info__text">
+          <div class="info__head">
+            <h1 class="info__title">Ремонт под ключ от 2900 руб/м2.</h1>
+            <div class="info__desc">
+              <h3 class="info__subtitle">
+                При заказе ремонта делаем дизайн-проект в подарок
+              </h3>
+              <div class="info__line"></div>
+            </div>
+          </div>
+          <ul class="info__bottom">
+            <li class="info__item">
+              <img src="/assets/car_icon.svg" alt="Бесплатный выезд" />
+              <p>Бесплатный выезд в день обращения</p>
+            </li>
+            <li class="info__item">
+              <img src="/assets/garant_icon.svg" alt="Гарантия" />
+              <p>Гарантия на работу до 5 лет</p>
+            </li>
+            <li class="info__item">
+              <img src="/assets/human_icon.svg" alt="Сроки" />
+              <p>Жесткое соблюдение сроков</p>
+            </li>
+          </ul>
+        </div>
+        <form class="info__form">
+          <h2 class="info__form-h2">Рассчитайте стоимость ремонта</h2>
+          <div class="info__form-selection">
+            <div class="info__form-selection-text">
+              <h4 class="info__form-h4">площадь квартиры:</h4>
+              <p class="info__form-selection-number">68м<span>2</span></p>
+            </div>
+            <input
+              class="info__form-selection-range"
+              type="range"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="info__form-type">
+            <h4 class="info__form-h4">тип жилья:</h4>
+            <div class="info__form-radio">
+              <div class="info__form-radio-item">
+                <input type="radio" name="type" id="type1" />
+                <label for="type1">Вторичное жилье</label>
+              </div>
+              <div class="info__form-radio-item">
+                <input type="radio" name="type" id="type2" />
+                <label for="type2">Новостройка</label>
+              </div>
+              <div class="info__form-radio-item">
+                <input type="radio" name="type" id="type3" />
+                <label for="type3">Офис</label>
+              </div>
+            </div>
+          </div>
+          <div class="info__form-rooms">
+            <h4 class="info__form-h4">кол-во комнат:</h4>
+            <div class="info__form-radio">
+              <div class="info__form-radio-item">
+                <input type="radio" name="rooms" id="room1" />
+                <label for="room1">1</label>
+              </div>
+              <div class="info__form-radio-item">
+                <input type="radio" name="rooms" id="room2" />
+                <label for="room2">2</label>
+              </div>
+              <div class="info__form-radio-item">
+                <input type="radio" name="rooms" id="room3" />
+                <label for="room3">3+</label>
+              </div>
+              <div class="info__form-radio-item">
+                <input type="radio" name="rooms" id="room4" />
+                <label for="room4">Студия</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="info__form-btn">отправить</button>
+        </form>
+      </section>
+      <button class="main__scroll">
+        <img
+          class="main__scroll-icon"
+          src="/assets/scroll_icon.svg"
+          alt="Прокрутить вниз"
+        />
+        <p class="main__scroll-text">scroll</p>
+      </button>
+      <img src="/assets/bg.png" alt="Фоновое изображение" />
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
