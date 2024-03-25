@@ -1,6 +1,6 @@
 @media (max-width: 1600px) {
   .header__logo {
-    width: 7.5vw; /* Уменьшите логотип */
+    width: 7.5vw;
   }
 
   .header__menu {
