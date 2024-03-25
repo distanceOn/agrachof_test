@@ -23,8 +23,6 @@ const bgWidth = bg.offsetWidth;
 function handleWheel(event) {
   const windowWidth = window.innerWidth;
 
-  console.log(event.deltaY);
-
   if (event.deltaY < 0 && positionBg >= 1) {
     positionBg += event.deltaY;
     bg.style.setProperty(
