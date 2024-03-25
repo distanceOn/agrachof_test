@@ -43,3 +43,17 @@ function handleWheel(event) {
 }
 
 window.addEventListener("wheel", handleWheel);
+
+const menuButton = document.querySelector(".menu__item"); // Assuming the button has the class 'menu__item'
+const menuHide = document.querySelector(".menu_hide");
+const closeButton = document.querySelector(".menu__close");
+
+menuButton.addEventListener("click", () => {
+  menuHide.classList.toggle("active"); // Add a class 'active' to show the menu
+  closeButton.classList.toggle("active"); // Show the close button when the menu is active
+});
+
+closeButton.addEventListener("click", () => {
+  menuHide.classList.remove("active"); // Hide the menu
+  closeButton.classList.remove("active"); // Hide the close button
+});
