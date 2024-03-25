@@ -1,13 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .main__info {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 2.4vw;
+  padding-bottom: 7vw;
 }
 
 .main__bg {
@@ -20,7 +21,7 @@
 }
 
 .main__scroll {
-  position: fixed;
+  position: absolute;
   width: 3.4375vw;
   height: 3.5625vw;
   bottom: 1.25vw;
