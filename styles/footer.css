@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  padding: 20px 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 2vw;
+}
