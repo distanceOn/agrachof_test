@@ -49,6 +49,7 @@
 
 .info__item {
   display: flex;
+  align-items: center;
   gap: 1vw;
   margin-bottom: 2.1875vw;
 }

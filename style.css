@@ -6,6 +6,7 @@
 @import "/styles/main__form.css";
 @import "/styles/footer.css";
 @import "/styles/animations.css";
+@import "/styles/adaptive_1440.css";
 
 html {
   height: fit-content;
