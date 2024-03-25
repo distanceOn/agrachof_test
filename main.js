@@ -15,3 +15,33 @@ function updateSliderBackground() {
 rangeInput.addEventListener("input", updateSliderBackground);
 
 updateSliderBackground();
+
+const bg = document.querySelector(".main__bg");
+let positionBg = 0;
+const bgWidth = bg.offsetWidth;
+
+function handleWheel(event) {
+  const windowWidth = window.innerWidth;
+
+  console.log(event.deltaY);
+
+  if (event.deltaY < 0 && positionBg >= 1) {
+    positionBg += event.deltaY;
+    bg.style.setProperty(
+      "transform",
+      `translateX(-${positionBg}px)`,
+      "important"
+    );
+  }
+
+  if (event.deltaY > 0 && positionBg < windowWidth) {
+    positionBg += event.deltaY;
+    bg.style.setProperty(
+      "transform",
+      `translateX(-${positionBg}px)`,
+      "important"
+    );
+  }
+}
+
+window.addEventListener("wheel", handleWheel);

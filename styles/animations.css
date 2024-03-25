@@ -47,6 +47,10 @@
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
+.main__bg {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
 .info__title {
   animation-delay: 0.2s;
 }

@@ -5,7 +5,11 @@
 @import "/styles/main__text.css";
 @import "/styles/main__form.css";
 @import "/styles/footer.css";
-@import url("./styles/animations.css");
+@import "/styles/animations.css";
+
+html {
+  height: fit-content;
+}
 
 body {
   width: 100vw;
