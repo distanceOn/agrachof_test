@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.main__info {
+  display: flex;
+  justify-content: center;
+  gap: 2.4vw;
+}
+
 .main__bg {
   position: absolute;
   width: 38.8vw;
