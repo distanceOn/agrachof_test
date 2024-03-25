@@ -1,0 +1,61 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.info__title,
+.info__desc,
+.info__bottom,
+.info__form {
+  visibility: hidden;
+}
+
+.info__title,
+.info__desc,
+.info__bottom {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.info__form {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.info__title {
+  animation-delay: 0.2s;
+}
+.info__desc {
+  animation-delay: 0.4s;
+}
+.info__bottom {
+  animation-delay: 0.6s;
+}
+.info__form {
+  animation-delay: 0.8s;
+}
