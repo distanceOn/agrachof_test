@@ -1,6 +1,8 @@
 @import "/styles/reset.css";
 @import "/styles/fonts.css";
 @import "/styles/header.css";
+@import "/styles/main.css";
+@import "/styles/text.css";
 
 body {
   width: 100vw;
@@ -9,4 +11,9 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
 }
