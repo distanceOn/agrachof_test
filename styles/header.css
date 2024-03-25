@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5vw 104px;
+}
+
+.header__logo {
+  width: 8.5vw;
+  height: 1.72vw;
+  margin-left: 4vw;
+  margin-right: 2vw;
+}
+
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.menu__item {
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__btn {
+  cursor: pointer;
+  width: 15vw;
+  height: 4vw;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #302594;
+  box-shadow: 0px 1.375vw 1.375vw rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

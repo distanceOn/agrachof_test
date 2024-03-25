@@ -1,2 +1,12 @@
 @import "/styles/reset.css";
 @import "/styles/fonts.css";
+@import "/styles/header.css";
+
+body {
+  width: 100vw;
+  background: linear-gradient(99.89deg, #3625af 0%, #c46bd5 98.82%);
+}
+
+* {
+  box-sizing: border-box;
+}
