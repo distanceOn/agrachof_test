@@ -3,6 +3,7 @@
 @import "/styles/header.css";
 @import "/styles/main.css";
 @import "/styles/main__text.css";
+@import "/styles/main__form.css";
 
 body {
   width: 100vw;

@@ -58,56 +58,75 @@
         </div>
         <form class="info__form">
           <h2 class="info__form-h2">Рассчитайте стоимость ремонта</h2>
-          <div class="info__form-selection">
-            <div class="info__form-selection-text">
-              <h4 class="info__form-h4">площадь квартиры:</h4>
-              <p class="info__form-selection-number">68м<span>2</span></p>
+
+          <div class="info__form-selections">
+            <div class="info__form-selection">
+              <div class="info__form-selection-text">
+                <h4 class="info__form-h4">площадь квартиры:</h4>
+                <p class="info__form-selection-number">68м<span>2</span></p>
+              </div>
+              <input
+                class="info__form-selection-range"
+                type="range"
+                min="0"
+                max="100"
+                id="myRange"
+              />
             </div>
-            <input
-              class="info__form-selection-range"
-              type="range"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="info__form-type">
-            <h4 class="info__form-h4">тип жилья:</h4>
-            <div class="info__form-radio">
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type1" />
-                <label for="type1">Вторичное жилье</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type2" />
-                <label for="type2">Новостройка</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type3" />
-                <label for="type3">Офис</label>
-              </div>
-            </div>
-          </div>
-          <div class="info__form-rooms">
-            <h4 class="info__form-h4">кол-во комнат:</h4>
-            <div class="info__form-radio">
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room1" />
-                <label for="room1">1</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room2" />
-                <label for="room2">2</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room3" />
-                <label for="room3">3+</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room4" />
-                <label for="room4">Студия</label>
+            <div class="info__form-type">
+              <h4 class="info__form-h4">тип жилья:</h4>
+              <div class="info__form-radio">
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type1" />
+                  </div>
+                  <label for="type1">Вторичное жилье</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type2" />
+                  </div>
+                  <label for="type2">Новостройка</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type3" />
+                  </div>
+                  <label for="type3">Офис</label>
+                </div>
               </div>
             </div>
+            <div class="info__form-rooms">
+              <h4 class="info__form-h4">кол-во комнат:</h4>
+              <div class="info__form-radio info__form-radio-rooms">
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room1" />
+                  </div>
+                  <label for="room1">1</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room2" />
+                  </div>
+                  <label for="room2">2</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room3" />
+                  </div>
+                  <label for="room3">3+</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room4" />
+                  </div>
+                  <label for="room4">Студия</label>
+                </div>
+              </div>
+            </div>
           </div>
+
           <button type="submit" class="info__form-btn">отправить</button>
         </form>
       </section>
@@ -122,6 +141,6 @@
       <img class="main__bg" src="/imgs/bg.png" alt="Фоновое изображение" />
     </main>
 
-    <script type="module" src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
