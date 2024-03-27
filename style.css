@@ -1,0 +1,30 @@
+@import "/styles/reset.css";
+@import "/styles/fonts.css";
+@import "/styles/header.css";
+@import "/styles/main.css";
+@import "/styles/main__text.css";
+@import "/styles/main__form.css";
+@import "/styles/footer.css";
+@import "/styles/animations.css";
+@import "/styles/adaptive_1440.css";
+@import "/styles/adaptive_mobile.css";
+
+html {
+  height: fit-content;
+}
+
+body {
+  width: 100vw;
+  height: fit-content;
+  background: linear-gradient(99.89deg, #3625af 0%, #c46bd5 98.82%);
+}
+
+* {
+  color: #fff;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}

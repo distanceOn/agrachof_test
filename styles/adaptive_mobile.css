@@ -1,0 +1,139 @@
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 4vw;
+  }
+
+  .header__menu {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    width: 20vw;
+    height: auto;
+    margin: 0;
+  }
+
+  .info__title {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .info__desc {
+    text-align: center;
+    align-items: center;
+  }
+
+  .info__line {
+    width: 100%;
+  }
+
+  .header__btn,
+  .info__form-btn {
+    width: 50%;
+    height: 7vw;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+  .main__bg {
+    width: 60%;
+    top: 15vw;
+  }
+
+  .menu__item,
+  .menu_hide-item {
+    font-size: 1rem;
+  }
+
+  .main__info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .info__title {
+    font-size: 2.5rem;
+  }
+
+  .info__text {
+    width: 50%;
+  }
+  .info__subtitle {
+    width: 100%;
+  }
+
+  .info__bottom {
+    align-self: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .info__item {
+    width: 30%;
+    margin: 0;
+  }
+
+  .info__item p {
+    text-align: center;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .info__form-h2 {
+    text-align: center;
+  }
+
+  .info__form {
+    width: 80%;
+  }
+
+  .info__form-h4 {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .info__form-radio-rooms {
+    gap: 0.5rem;
+  }
+
+  .info__title {
+    font-size: 24px;
+  }
+  .info__form-radio {
+    align-self: center;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5rem;
+  }
+
+  .menu_hide {
+    height: fit-content;
+    top: 0;
+    left: -93%;
+  }
+
+  .info__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info__item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main__scroll {
+    bottom: 10px;
+  }
+
+  .main__scroll-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .info__form-selection-range {
+    width: 100%;
+  }
+}

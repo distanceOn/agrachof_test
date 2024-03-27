@@ -4,14 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <a class="header__logo logo" href="#">
-        <img src="/assets/logo.png" alt="Логотип компании Танос" />
+        <img src="/imgs/logo.png" alt="Логотип компании Танос" />
       </a>
+
       <nav class="header__menu menu">
+        <div class="menu_hide">
+          <a class="menu_hide-item" href="">услуги</a>
+          <a class="menu_hide-item" href="">статьи</a>
+          <a class="menu_hide-item" href="">вакансии</a>
+          <a class="menu_hide-item" href="">франшиза</a>
+        </div>
+        <img class="menu__close" src="/imgs/close__icon.svg" alt="" />
         <button class="menu__item">меню</button>
         <a class="menu__item" href="">портфолио</a>
         <a class="menu__item" href="">цены</a>
@@ -37,85 +51,112 @@
           </div>
           <ul class="info__bottom">
             <li class="info__item">
-              <img src="/assets/car_icon.svg" alt="Бесплатный выезд" />
+              <img src="/imgs/car_icon.svg" alt="Бесплатный выезд" />
               <p>Бесплатный выезд в день обращения</p>
             </li>
             <li class="info__item">
-              <img src="/assets/garant_icon.svg" alt="Гарантия" />
+              <img src="/imgs/garant_icon.svg" alt="Гарантия" />
               <p>Гарантия на работу до 5 лет</p>
             </li>
             <li class="info__item">
-              <img src="/assets/human_icon.svg" alt="Сроки" />
+              <img src="/imgs/human_icon.svg" alt="Сроки" />
               <p>Жесткое соблюдение сроков</p>
             </li>
           </ul>
         </div>
         <form class="info__form">
           <h2 class="info__form-h2">Рассчитайте стоимость ремонта</h2>
-          <div class="info__form-selection">
-            <div class="info__form-selection-text">
-              <h4 class="info__form-h4">площадь квартиры:</h4>
-              <p class="info__form-selection-number">68м<span>2</span></p>
+
+          <div class="info__form-selections">
+            <div class="info__form-selection">
+              <div class="info__form-selection-text">
+                <h4 class="info__form-h4">площадь квартиры:</h4>
+                <p class="info__form-selection-number">68м<span>2</span></p>
+              </div>
+              <input
+                class="info__form-selection-range"
+                type="range"
+                min="0"
+                max="100"
+                id="myRange"
+              />
             </div>
-            <input
-              class="info__form-selection-range"
-              type="range"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="info__form-type">
-            <h4 class="info__form-h4">тип жилья:</h4>
-            <div class="info__form-radio">
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type1" />
-                <label for="type1">Вторичное жилье</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type2" />
-                <label for="type2">Новостройка</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="type" id="type3" />
-                <label for="type3">Офис</label>
-              </div>
-            </div>
-          </div>
-          <div class="info__form-rooms">
-            <h4 class="info__form-h4">кол-во комнат:</h4>
-            <div class="info__form-radio">
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room1" />
-                <label for="room1">1</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room2" />
-                <label for="room2">2</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room3" />
-                <label for="room3">3+</label>
-              </div>
-              <div class="info__form-radio-item">
-                <input type="radio" name="rooms" id="room4" />
-                <label for="room4">Студия</label>
+            <div class="info__form-type">
+              <h4 class="info__form-h4">тип жилья:</h4>
+              <div class="info__form-radio">
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type1" />
+                  </div>
+                  <label for="type1">Вторичное жилье</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type2" />
+                  </div>
+                  <label for="type2">Новостройка</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="type" id="type3" />
+                  </div>
+                  <label for="type3">Офис</label>
+                </div>
               </div>
             </div>
+            <div class="info__form-rooms">
+              <h4 class="info__form-h4">кол-во комнат:</h4>
+              <div class="info__form-radio info__form-radio-rooms">
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room1" />
+                  </div>
+                  <label for="room1">1</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room2" />
+                  </div>
+                  <label for="room2">2</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room3" />
+                  </div>
+                  <label for="room3">3+</label>
+                </div>
+                <div class="info__form-radio-item">
+                  <div class="info__form-radio-input">
+                    <input type="radio" name="rooms" id="room4" />
+                  </div>
+                  <label for="room4">Студия</label>
+                </div>
+              </div>
+            </div>
           </div>
+
           <button type="submit" class="info__form-btn">отправить</button>
         </form>
+        <button class="main__scroll">
+          <img
+            class="main__scroll-icon"
+            src="/imgs/scroll_icon.svg"
+            alt="Прокрутить вниз"
+          />
+          <p class="main__scroll-text">scroll</p>
+        </button>
+        <img class="main__bg" src="/imgs/bg.png" alt="Фоновое изображение" />
       </section>
-      <button class="main__scroll">
-        <img
-          class="main__scroll-icon"
-          src="/assets/scroll_icon.svg"
-          alt="Прокрутить вниз"
-        />
-        <p class="main__scroll-text">scroll</p>
-      </button>
-      <img src="/assets/bg.png" alt="Фоновое изображение" />
     </main>
 
-    <script type="module" src="main.js"></script>
+    <footer class="footer">
+      <nav class="footer__menu menu">
+        <a class="menu__item" href="#">PHP</a>
+        <a class="menu__item" href="#">КАРТА</a>
+        <a class="menu__item" href="#">АРХИВ</a>
+      </nav>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

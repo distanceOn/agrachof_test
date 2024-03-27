@@ -1,0 +1,79 @@
+@media (max-width: 1600px) {
+  .header__logo {
+    width: 7.5vw;
+  }
+
+  .header__menu {
+    gap: 1.5vw;
+  }
+
+  .menu__item {
+    font-size: 0.8rem;
+  }
+
+  .header__btn {
+    cursor: pointer;
+    width: 12vw;
+    height: 3.5vw;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    box-shadow: 0px 1.375vw 1.375vw rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  .menu__close {
+    left: -2vw;
+  }
+
+  .menu_hide {
+    left: -2vw;
+    bottom: -8.291666666666667vw;
+
+    gap: 0.625vw;
+    padding: 7px 1.979vw 7px 0.989vw;
+  }
+
+  .info__title {
+    font-size: 2.4375rem;
+    line-height: 3.125rem;
+  }
+  .info__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 20.3vw;
+  }
+
+  .info__line {
+    width: 7.625vw;
+    height: 4px;
+    background: #baf1ff;
+  }
+
+  .info__item p {
+    font-size: 0.675rem;
+    line-height: 0.8625rem;
+    width: 6.8125vw;
+  }
+
+  .info__form-radio-item label {
+    font-size: 0.675rem;
+    max-width: 65px;
+  }
+
+  .info__form {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30.458vw;
+    max-width: 48rem;
+    gap: 1.5rem;
+  }
+  .main__info {
+    gap: 2vw;
+    padding-bottom: 9vw;
+  }
+
+  .menu_hide-item {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
